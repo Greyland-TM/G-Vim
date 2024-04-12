@@ -1,1 +1,1 @@
-*** Please only fork this repo, thanks ***
+**Please only fork this repo, thanks**
