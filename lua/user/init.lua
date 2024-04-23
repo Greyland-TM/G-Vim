@@ -22,6 +22,7 @@ return {
     callback = function()
       -- link python docstring styles to Comment styles
       vim.api.nvim_set_hl(0, "@string.documentation.python", { link = "Comment" })
+      vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = "#647587" })
     end,
   }),
 
