@@ -51,9 +51,9 @@ maps.n["<leader>pl"] = { "<cmd>AstroChangelog<cr>", desc = "AstroNvim Changelog"
 -- Manage Buffers
 maps.n["<leader>c"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" }
 maps.n["<leader>C"] = { function() require("astronvim.utils.buffer").close(0, true) end, desc = "Force close buffer" }
-maps.n["]b"] =
+maps.n["<C-n>"] =
   { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" }
-maps.n["[b"] = {
+maps.n["<C-p>"] = {
   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
   desc = "Previous buffer",
 }
@@ -298,8 +298,8 @@ if is_available "telescope.nvim" then
   maps.n["<leader>fr"] = { function() require("telescope.builtin").registers() end, desc = "Find registers" }
   maps.n["<leader>ft"] =
     { function() require("telescope.builtin").colorscheme { enable_preview = true } end, desc = "Find themes" }
-  maps.n["<leader>fw"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
-  maps.n["<leader>fW"] = {
+  maps.n["<leader>fg"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
+  maps.n["<leader>fg"] = {
     function()
       require("telescope.builtin").live_grep {
         additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
