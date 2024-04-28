@@ -13,6 +13,7 @@ return {
               autoSearchPaths = true,
               diagnosticMode = "openFilesOnly",
               useLibraryCodeForTypes = true,
+              reportUnknownMemberType = false,
             },
           },
         },
