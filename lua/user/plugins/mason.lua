@@ -21,7 +21,6 @@ return {
         "eslint-lsp",
         "black",
         "stylua",
-        "pylint",
         "tailwindcss-language-server",
         "typescript-language-server",
         "cpptools",

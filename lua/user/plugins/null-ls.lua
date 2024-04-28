@@ -1,4 +1,4 @@
-return {
+re662132turn {
   "jose-elias-alvarez/null-ls.nvim",
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
