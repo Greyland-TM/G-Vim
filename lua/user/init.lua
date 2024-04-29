@@ -17,6 +17,8 @@ return {
     },
   },
 
+  -- setup must be called before loading
+  vim.cmd.colorscheme "catppuccin",
   -- set up highlighting before colorscheme loads
   vim.api.nvim_create_autocmd("colorscheme", {
     callback = function()
@@ -27,7 +29,7 @@ return {
   }),
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
