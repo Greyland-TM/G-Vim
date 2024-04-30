@@ -298,8 +298,8 @@ if is_available "telescope.nvim" then
   maps.n["<leader>fr"] = { function() require("telescope.builtin").registers() end, desc = "Find registers" }
   maps.n["<leader>ft"] =
     { function() require("telescope.builtin").colorscheme { enable_preview = true } end, desc = "Find themes" }
-  maps.n["<leader>fg"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
-  maps.n["<leader>fg"] = {
+  maps.n["<leader>fw"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
+  maps.n["<leader>fw"] = {
     function()
       require("telescope.builtin").live_grep {
         additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
