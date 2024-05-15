@@ -11,7 +11,7 @@ return {
     vim.keymap.set("n", "<C-q>", function() ui.nav_file(1) end)
     vim.keymap.set("n", "<C-w>", function() ui.nav_file(2) end)
     vim.keymap.set("n", "<C-e>", function() ui.nav_file(3) end)
-    vim.keymap.set("n", "<C-r>", function() ui.nav_file(4) end)
+    -- vim.keymap.set("n", "<C-r>", function() ui.nav_file(4) end)
 
     vim.keymap.set("n", "<C-N>", function() ui.nav_next() end)
     vim.keymap.set("n", "<C-P>", function() ui.nav_prev() end)

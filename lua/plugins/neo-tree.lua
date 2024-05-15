@@ -108,8 +108,8 @@ return {
         width = 30,
         mappings = {
           ["<space>"] = false, -- disable space until we figure out which-key disabling
-          ["<C-n>"] = "prev_source",
-          ["<C-p>"] = "next_source",
+          ["<C-p>"] = "prev_source",
+          ["<C-r>"] = "next_source",
           O = "system_open",
           Y = "copy_selector",
           h = "parent_or_close",
